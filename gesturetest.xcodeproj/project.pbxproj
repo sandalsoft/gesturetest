@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708A59A1731CBAB0075BB28 /* GesturePadView.m */; };
 		07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E2172F713000A6688D /* UIKit.framework */; };
 		07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E4172F713000A6688D /* Foundation.framework */; };
 		07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E6172F713000A6688D /* CoreGraphics.framework */; };
@@ -19,9 +20,23 @@
 		07FB16FC172F713000A6688D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16FA172F713000A6688D /* MainStoryboard_iPhone.storyboard */; };
 		07FB16FF172F713000A6688D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */; };
 		07FB1702172F713000A6688D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB1701172F713000A6688D /* ViewController.m */; };
+		07FB171C1730B26100A6688D /* DollarDefaultGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17111730B26100A6688D /* DollarDefaultGestures.m */; };
+		07FB171D1730B26100A6688D /* DollarP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17131730B26100A6688D /* DollarP.m */; };
+		07FB171E1730B26100A6688D /* DollarPGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */; };
+		07FB171F1730B26100A6688D /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17171730B26100A6688D /* DollarPoint.m */; };
+		07FB17201730B26100A6688D /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17191730B26100A6688D /* DollarPointCloud.m */; };
+		07FB17211730B26100A6688D /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB171B1730B26100A6688D /* DollarResult.m */; };
+		07FB175617315EDF00A6688D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175517315EDF00A6688D /* QuartzCore.framework */; };
+		07FB175817315EE700A6688D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175717315EE700A6688D /* CoreMedia.framework */; };
+		07FB175A17315EF200A6688D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175917315EF200A6688D /* CoreVideo.framework */; };
+		07FB175C17315EFA00A6688D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175B17315EFA00A6688D /* OpenGLES.framework */; };
+		07FB175E17315F0000A6688D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175D17315F0000A6688D /* AVFoundation.framework */; };
+		07FB17641731640500A6688D /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17631731640500A6688D /* GestureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0708A5991731CBAB0075BB28 /* GesturePadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePadView.h; sourceTree = "<group>"; };
+		0708A59A1731CBAB0075BB28 /* GesturePadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePadView.m; sourceTree = "<group>"; };
 		07FB16DF172F713000A6688D /* gesturetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gesturetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FB16E2172F713000A6688D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FB16E4172F713000A6688D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +54,25 @@
 		07FB16FE172F713000A6688D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		07FB1700172F713000A6688D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		07FB1701172F713000A6688D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07FB17101730B26100A6688D /* DollarDefaultGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarDefaultGestures.h; sourceTree = "<group>"; };
+		07FB17111730B26100A6688D /* DollarDefaultGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarDefaultGestures.m; sourceTree = "<group>"; };
+		07FB17121730B26100A6688D /* DollarP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarP.h; sourceTree = "<group>"; };
+		07FB17131730B26100A6688D /* DollarP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarP.m; sourceTree = "<group>"; };
+		07FB17141730B26100A6688D /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPGestureRecognizer.h; sourceTree = "<group>"; };
+		07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPGestureRecognizer.m; sourceTree = "<group>"; };
+		07FB17161730B26100A6688D /* DollarPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPoint.h; sourceTree = "<group>"; };
+		07FB17171730B26100A6688D /* DollarPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPoint.m; sourceTree = "<group>"; };
+		07FB17181730B26100A6688D /* DollarPointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPointCloud.h; sourceTree = "<group>"; };
+		07FB17191730B26100A6688D /* DollarPointCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
+		07FB171A1730B26100A6688D /* DollarResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
+		07FB171B1730B26100A6688D /* DollarResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+		07FB175517315EDF00A6688D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		07FB175717315EE700A6688D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07FB175917315EF200A6688D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		07FB175B17315EFA00A6688D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		07FB175D17315F0000A6688D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07FB17621731640500A6688D /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		07FB17631731640500A6688D /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FB175E17315F0000A6688D /* AVFoundation.framework in Frameworks */,
+				07FB175C17315EFA00A6688D /* OpenGLES.framework in Frameworks */,
+				07FB175A17315EF200A6688D /* CoreVideo.framework in Frameworks */,
+				07FB175817315EE700A6688D /* CoreMedia.framework in Frameworks */,
+				07FB175617315EDF00A6688D /* QuartzCore.framework in Frameworks */,
 				07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */,
 				07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */,
 				07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +114,11 @@
 		07FB16E1172F713000A6688D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07FB175D17315F0000A6688D /* AVFoundation.framework */,
+				07FB175B17315EFA00A6688D /* OpenGLES.framework */,
+				07FB175917315EF200A6688D /* CoreVideo.framework */,
+				07FB175717315EE700A6688D /* CoreMedia.framework */,
+				07FB175517315EDF00A6688D /* QuartzCore.framework */,
 				07FB16E2172F713000A6688D /* UIKit.framework */,
 				07FB16E4172F713000A6688D /* Foundation.framework */,
 				07FB16E6172F713000A6688D /* CoreGraphics.framework */,
@@ -85,12 +129,17 @@
 		07FB16E8172F713000A6688D /* gesturetest */ = {
 			isa = PBXGroup;
 			children = (
+				07FB170E1730B26100A6688D /* libs */,
 				07FB16F1172F713000A6688D /* AppDelegate.h */,
 				07FB16F2172F713000A6688D /* AppDelegate.m */,
 				07FB16FA172F713000A6688D /* MainStoryboard_iPhone.storyboard */,
 				07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */,
 				07FB1700172F713000A6688D /* ViewController.h */,
 				07FB1701172F713000A6688D /* ViewController.m */,
+				07FB17621731640500A6688D /* GestureViewController.h */,
+				07FB17631731640500A6688D /* GestureViewController.m */,
+				0708A5991731CBAB0075BB28 /* GesturePadView.h */,
+				0708A59A1731CBAB0075BB28 /* GesturePadView.m */,
 				07FB16E9172F713000A6688D /* Supporting Files */,
 			);
 			path = gesturetest;
@@ -108,6 +157,33 @@
 				07FB16F8172F713000A6688D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07FB170E1730B26100A6688D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				07FB170F1730B26100A6688D /* DollarP */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		07FB170F1730B26100A6688D /* DollarP */ = {
+			isa = PBXGroup;
+			children = (
+				07FB17101730B26100A6688D /* DollarDefaultGestures.h */,
+				07FB17111730B26100A6688D /* DollarDefaultGestures.m */,
+				07FB17121730B26100A6688D /* DollarP.h */,
+				07FB17131730B26100A6688D /* DollarP.m */,
+				07FB17141730B26100A6688D /* DollarPGestureRecognizer.h */,
+				07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */,
+				07FB17161730B26100A6688D /* DollarPoint.h */,
+				07FB17171730B26100A6688D /* DollarPoint.m */,
+				07FB17181730B26100A6688D /* DollarPointCloud.h */,
+				07FB17191730B26100A6688D /* DollarPointCloud.m */,
+				07FB171A1730B26100A6688D /* DollarResult.h */,
+				07FB171B1730B26100A6688D /* DollarResult.m */,
+			);
+			path = DollarP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +256,14 @@
 				07FB16EF172F713000A6688D /* main.m in Sources */,
 				07FB16F3172F713000A6688D /* AppDelegate.m in Sources */,
 				07FB1702172F713000A6688D /* ViewController.m in Sources */,
+				07FB171C1730B26100A6688D /* DollarDefaultGestures.m in Sources */,
+				07FB171D1730B26100A6688D /* DollarP.m in Sources */,
+				07FB171E1730B26100A6688D /* DollarPGestureRecognizer.m in Sources */,
+				07FB171F1730B26100A6688D /* DollarPoint.m in Sources */,
+				07FB17201730B26100A6688D /* DollarPointCloud.m in Sources */,
+				07FB17211730B26100A6688D /* DollarResult.m in Sources */,
+				07FB17641731640500A6688D /* GestureViewController.m in Sources */,
+				0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +396,7 @@
 				07FB1707172F713000A6688D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
