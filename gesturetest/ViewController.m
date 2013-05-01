@@ -27,6 +27,13 @@
     self.dataTableView.dataSource = self;
     
     self.data = @[@"story 1", @"blah blah", @"hello", @"data stuffs", @"tits!"];
+    
+    
+    #warning LONG TOUCH TRIGGERS IT
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(buttonLongPressed:)];
+    longPress.minimumPressDuration = 1.5;
+    
+    [self.view addGestureRecognizer:longPress];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,19 +42,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-#warning LONG TOUCH TRIGGERS IT
 
+
+- (void)buttonLongPressed:(UILongPressGestureRecognizer *)sender {
+    if(sender.state == UIGestureRecognizerStateBegan)
+    {
+        NSLog(@"began");
+    }
+    
+    if(sender.state == UIGestureRecognizerStateEnded)
+    {
+        NSLog(@"end");
+        UIImage *screenShot;
+        screenShot = [self takeScreenShot];
+        self.view.layer.borderColor = [UIColor redColor].CGColor;
+        self.view.layer.borderWidth = 3.0f;
+    }
+}
+- (UIImage *)takeScreenShot {
+    CGRect rect = [self.view bounds];
+    UIGraphicsBeginImageContextWithOptions(rect.size,YES,0.0f);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.view.layer renderInContext:context];
+    UIImage *screenShot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return screenShot;
+}
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
         if ([[segue identifier] isEqualToString:@"GestureSegue"]) {
-            NSLog(@"segueing");
-            UIGraphicsBeginImageContext(CGSizeMake(320,480));
-            CGContextRef context = UIGraphicsGetCurrentContext();
-            [self.view.layer drawInContext:context];
-            UIImage *screenShot = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
 
-            [[segue destinationViewController] setgesturebg:screenShot];
+            UIImage *screenShot;
+            screenShot = [self takeScreenShot];
+        
+            [[segue destinationViewController] setBgimage:screenShot];
+            
+            
 //            GestureViewController *gvc = [[GestureViewController alloc] init];
 //            gvc = [segue destinationViewController];
 //            gvc.dollarPGestureRecognizer = [[DollarPGestureRecognizer alloc] initWithTarget:gvc

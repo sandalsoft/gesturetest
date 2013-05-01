@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "gesturetest/GestureViewController.m"
-         timestampString = "389141503.396972"
+         timestampString = "389143669.145584"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
          landmarkName = "-gestureRecognized:"
          landmarkType = "5">
       </FileBreakpoint>

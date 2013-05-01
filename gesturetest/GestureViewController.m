@@ -28,6 +28,7 @@
     
     [self.gesturePadView addGestureRecognizer:self.dollarPGestureRecognizer];
 
+    self.gesturePadView.backgroundColor = [UIColor colorWithPatternImage:self.bgimage];
 
 //    [self.view addSubview:self.gesturePadView];
 }

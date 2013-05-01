@@ -16,7 +16,7 @@
 @property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
 
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
-
+@property (strong, nonatomic) UIImage *bgimage;
 
 - (void)setgesturebg:(UIImage *)bgImage;
 @end
