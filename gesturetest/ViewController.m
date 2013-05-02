@@ -12,6 +12,7 @@
 #import "DollarDefaultGestures.h"
 #import <QuartzCore/QuartzCore.h>
 #import "GesturePadView.h"
+#import "GestureRouter.h"
 
 
 @interface ViewController ()
@@ -33,6 +34,11 @@
                                              selector:@selector(gestureProcessingDone:)
                                                  name:@"GestureProcessingDone"
                                                object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gestureTouchesDone:)
+                                                 name:@"DollarPGestureTouchesEnd"
+                                               object:nil];
+    
     
     
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(buttonLongPressed:)];
@@ -40,13 +46,26 @@
     
     [self.view addGestureRecognizer:longPress];
 }
+- (void) gestureTouchesDone:(NSNotification *)gestureNotification {
+
+    // Process the touchesfrom the gesture view 
+    
+}
+
 
 - (void) gestureProcessingDone:(NSNotification *)gestureNotification {
     
     NSDictionary *gestureInfo = [[NSDictionary alloc] initWithDictionary:[gestureNotification userInfo]];
     NSLog(@"gesture name: %@, score: %@", [gestureInfo objectForKey:@"gestureName"], [gestureInfo objectForKey:@"gestureScore"]);
+   
+    
     [self removeBorder];
-
+    
+    
+    // Remove the gesutre pad
+    for(UIView *subview in [self.view subviews])
+        if([subview isKindOfClass:[GesturePadView class]])
+            [subview removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning

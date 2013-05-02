@@ -1,0 +1,23 @@
+//
+//  GestureRouter.h
+//  gesturetest
+//
+//  Created by Eric Nelson on 5/2/13.
+//  Copyright (c) 2013 Sandalsoft. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "DollarPGestureRecognizer.h"
+#import "DollarDefaultGestures.h"
+#import "GesturePadView.h"
+
+@interface GestureRouter : NSObject
+
+@property (strong, nonatomic) IBOutlet GesturePadView *gesturePadView;
+@property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
+
+
+
+
+
+@end

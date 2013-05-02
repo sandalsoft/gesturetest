@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708A59A1731CBAB0075BB28 /* GesturePadView.m */; };
 		07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A570851732F9FB00FF8692 /* GestureTits.xib */; };
+		07A570891733032800FF8692 /* GestureRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570881733032800FF8692 /* GestureRouter.m */; };
 		07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E2172F713000A6688D /* UIKit.framework */; };
 		07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E4172F713000A6688D /* Foundation.framework */; };
 		07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E6172F713000A6688D /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 		0708A5991731CBAB0075BB28 /* GesturePadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePadView.h; sourceTree = "<group>"; };
 		0708A59A1731CBAB0075BB28 /* GesturePadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePadView.m; sourceTree = "<group>"; };
 		07A570851732F9FB00FF8692 /* GestureTits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureTits.xib; sourceTree = "<group>"; };
+		07A570871733032800FF8692 /* GestureRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRouter.h; sourceTree = "<group>"; };
+		07A570881733032800FF8692 /* GestureRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRouter.m; sourceTree = "<group>"; };
 		07FB16DF172F713000A6688D /* gesturetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gesturetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FB16E2172F713000A6688D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FB16E4172F713000A6688D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 				07A570851732F9FB00FF8692 /* GestureTits.xib */,
 				07FB17621731640500A6688D /* GestureViewController.h */,
 				07FB17631731640500A6688D /* GestureViewController.m */,
+				07A570871733032800FF8692 /* GestureRouter.h */,
+				07A570881733032800FF8692 /* GestureRouter.m */,
 				0708A5991731CBAB0075BB28 /* GesturePadView.h */,
 				0708A59A1731CBAB0075BB28 /* GesturePadView.m */,
 				07FB16E9172F713000A6688D /* Supporting Files */,
@@ -268,6 +273,7 @@
 				07FB17211730B26100A6688D /* DollarResult.m in Sources */,
 				07FB17641731640500A6688D /* GestureViewController.m in Sources */,
 				0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */,
+				07A570891733032800FF8692 /* GestureRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

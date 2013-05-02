@@ -33,13 +33,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "gesturetest/ViewController.m"
-         timestampString = "389215462.425831"
+         filePath = "gesturetest/GestureViewController.m"
+         timestampString = "389218800.276046"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
-         landmarkName = "-gestureProcessingDone:"
+         startingLineNumber = "39"
+         endingLineNumber = "39"
+         landmarkName = "-gestureRecognized:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
