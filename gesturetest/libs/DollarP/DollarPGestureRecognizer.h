@@ -8,6 +8,7 @@
     NSMutableArray *currentPoints;
     NSMutableArray *points;
     int strokeId;
+    NSTimer *timer;
 }
 
 @property (nonatomic, strong) NSMutableArray *pointClouds;

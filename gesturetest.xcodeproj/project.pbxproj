@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708A59A1731CBAB0075BB28 /* GesturePadView.m */; };
+		07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A570851732F9FB00FF8692 /* GestureTits.xib */; };
 		07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E2172F713000A6688D /* UIKit.framework */; };
 		07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E4172F713000A6688D /* Foundation.framework */; };
 		07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E6172F713000A6688D /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		0708A5991731CBAB0075BB28 /* GesturePadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePadView.h; sourceTree = "<group>"; };
 		0708A59A1731CBAB0075BB28 /* GesturePadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePadView.m; sourceTree = "<group>"; };
+		07A570851732F9FB00FF8692 /* GestureTits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureTits.xib; sourceTree = "<group>"; };
 		07FB16DF172F713000A6688D /* gesturetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gesturetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FB16E2172F713000A6688D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FB16E4172F713000A6688D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +138,7 @@
 				07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */,
 				07FB1700172F713000A6688D /* ViewController.h */,
 				07FB1701172F713000A6688D /* ViewController.m */,
+				07A570851732F9FB00FF8692 /* GestureTits.xib */,
 				07FB17621731640500A6688D /* GestureViewController.h */,
 				07FB17631731640500A6688D /* GestureViewController.m */,
 				0708A5991731CBAB0075BB28 /* GesturePadView.h */,
@@ -243,6 +246,7 @@
 				07FB16F9172F713000A6688D /* Default-568h@2x.png in Resources */,
 				07FB16FC172F713000A6688D /* MainStoryboard_iPhone.storyboard in Resources */,
 				07FB16FF172F713000A6688D /* MainStoryboard_iPad.storyboard in Resources */,
+				07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

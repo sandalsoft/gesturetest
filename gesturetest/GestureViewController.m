@@ -35,10 +35,15 @@
 
 - (void)gestureRecognized:(DollarPGestureRecognizer *)sender {
     DollarResult *result = [sender result];
-    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
-    NSLog(@"%@",[NSString stringWithFormat:@"Result: %@ (Score: %.2f)",
-                          [result name], [result score]]);
-    if ([self respondsToSelector:@selector(presentingViewController)]){
+    
+    NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"GestureProcessingDone" object:nil userInfo:gestureDict];
+
+//    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
+//    NSLog(@"%@",[NSString stringWithFormat:@"Result: %@ (Score: %.2f)", [result name], [result score]]);
+
+        if ([self respondsToSelector:@selector(presentingViewController)]){
         [self dismissViewControllerAnimated:NO
                                  completion:^{
                                      //

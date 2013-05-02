@@ -27,6 +27,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        NSLog(@"GestureView initWithFrame");
         [self setup];
     }
     return self;

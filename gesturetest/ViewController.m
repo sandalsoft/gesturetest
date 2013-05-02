@@ -11,6 +11,7 @@
 #import <RWBlurPopover/RWBlurPopover.h>
 #import "DollarDefaultGestures.h"
 #import <QuartzCore/QuartzCore.h>
+#import "GesturePadView.h"
 
 
 @interface ViewController ()
@@ -28,12 +29,24 @@
     
     self.data = @[@"story 1", @"blah blah", @"hello", @"data stuffs", @"tits!"];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gestureProcessingDone:)
+                                                 name:@"GestureProcessingDone"
+                                               object:nil];
     
-    #warning LONG TOUCH TRIGGERS IT
+    
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(buttonLongPressed:)];
     longPress.minimumPressDuration = 1.5;
     
     [self.view addGestureRecognizer:longPress];
+}
+
+- (void) gestureProcessingDone:(NSNotification *)gestureNotification {
+    
+    NSDictionary *gestureInfo = [[NSDictionary alloc] initWithDictionary:[gestureNotification userInfo]];
+    NSLog(@"gesture name: %@, score: %@", [gestureInfo objectForKey:@"gestureName"], [gestureInfo objectForKey:@"gestureScore"]);
+    [self removeBorder];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,19 +57,30 @@
 
 
 
+- (void)addBorder:(UIColor *)borderColor withTickness:(float)thickness {
+    self.view.layer.borderColor = borderColor.CGColor;
+    self.view.layer.borderWidth = thickness;
+}
+
+- (void)removeBorder {
+    self.view.layer.borderColor = nil;
+    self.view.layer.borderWidth = 0;
+}
 - (void)buttonLongPressed:(UILongPressGestureRecognizer *)sender {
     if(sender.state == UIGestureRecognizerStateBegan)
     {
-        NSLog(@"began");
+        UIImage *screenShot;
+        screenShot = [self takeScreenShot];
+        [self addBorder:[UIColor redColor] withTickness:3.0f];
     }
     
     if(sender.state == UIGestureRecognizerStateEnded)
     {
-        NSLog(@"end");
-        UIImage *screenShot;
-        screenShot = [self takeScreenShot];
-        self.view.layer.borderColor = [UIColor redColor].CGColor;
-        self.view.layer.borderWidth = 3.0f;
+        NSLog(@"finger up, start gesuter recog");
+        GesturePadView *gestureView =[[[NSBundle mainBundle] loadNibNamed:@"GestureTits" owner:self options:nil] lastObject];
+        gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot]];
+        [self.view addSubview:gestureView];
+        
     }
 }
 - (UIImage *)takeScreenShot {
