@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GestureRouter.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
@@ -15,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 
 @property (strong, nonatomic) NSArray *data;
+
+@property (strong, nonatomic) GestureRouter *gestureRouter;
 @end

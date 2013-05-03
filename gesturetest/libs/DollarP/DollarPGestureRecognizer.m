@@ -57,15 +57,11 @@
 //    NSDictionary *touchInfo = @{@"touches":touches,@"event":event};
 //    timer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(gestureComplete) userInfo:touchInfo repeats:NO];
 
-
     [[NSNotificationCenter defaultCenter] postNotificationName:@"DollarPGestureTouchesEnd" object:self];
-
-    
     [super touchesEnded:touches withEvent:event];
 }
 
 - (void)gestureComplete:(NSTimer *) myTimer {
-        NSLog(@"gesture done");
     NSDictionary *userInfo = [[NSDictionary alloc] init];
     userInfo = (NSDictionary *) myTimer.userInfo;
     [super touchesEnded:[userInfo objectForKey:@"touches"] withEvent:[userInfo objectForKey:@"event"]];

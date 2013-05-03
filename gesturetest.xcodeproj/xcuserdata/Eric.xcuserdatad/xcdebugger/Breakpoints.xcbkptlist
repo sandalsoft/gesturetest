@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "gesturetest/libs/DollarP/DollarPGestureRecognizer.m"
-         timestampString = "389215134.995457"
+         timestampString = "389239159.250902"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
+         startingLineNumber = "64"
+         endingLineNumber = "64"
          landmarkName = "-gestureComplete:"
          landmarkType = "5">
       </FileBreakpoint>
