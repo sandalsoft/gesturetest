@@ -11,6 +11,8 @@
 		07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A570851732F9FB00FF8692 /* GestureTits.xib */; };
 		07A570891733032800FF8692 /* GestureRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570881733032800FF8692 /* GestureRouter.m */; };
 		07A5708B17335D9B00FF8692 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708A17335D9B00FF8692 /* Twitter.framework */; };
+		07A5708D1733602700FF8692 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708C1733602700FF8692 /* MessageUI.framework */; };
+		07A5708F1733F3A000FF8692 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708E1733F3A000FF8692 /* Social.framework */; };
 		07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E2172F713000A6688D /* UIKit.framework */; };
 		07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E4172F713000A6688D /* Foundation.framework */; };
 		07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E6172F713000A6688D /* CoreGraphics.framework */; };
@@ -44,6 +46,8 @@
 		07A570871733032800FF8692 /* GestureRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRouter.h; sourceTree = "<group>"; };
 		07A570881733032800FF8692 /* GestureRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRouter.m; sourceTree = "<group>"; };
 		07A5708A17335D9B00FF8692 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		07A5708C1733602700FF8692 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		07A5708E1733F3A000FF8692 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		07FB16DF172F713000A6688D /* gesturetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gesturetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FB16E2172F713000A6688D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FB16E4172F713000A6688D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A5708F1733F3A000FF8692 /* Social.framework in Frameworks */,
+				07A5708D1733602700FF8692 /* MessageUI.framework in Frameworks */,
 				07A5708B17335D9B00FF8692 /* Twitter.framework in Frameworks */,
 				07FB175E17315F0000A6688D /* AVFoundation.framework in Frameworks */,
 				07FB175C17315EFA00A6688D /* OpenGLES.framework in Frameworks */,
@@ -122,6 +128,8 @@
 		07FB16E1172F713000A6688D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07A5708E1733F3A000FF8692 /* Social.framework */,
+				07A5708C1733602700FF8692 /* MessageUI.framework */,
 				07A5708A17335D9B00FF8692 /* Twitter.framework */,
 				07FB175D17315F0000A6688D /* AVFoundation.framework */,
 				07FB175B17315EFA00A6688D /* OpenGLES.framework */,

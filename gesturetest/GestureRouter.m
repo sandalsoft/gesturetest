@@ -75,6 +75,7 @@
     [self addBorder:callingView withBorderColor:[UIColor redColor] withTickness:3.0f];
     
     self.gesturePadView  = [[[NSBundle mainBundle] loadNibNamed:@"GestureTits" owner:self options:nil] lastObject];
+    self.gesturePadView.showStroke = self.showStroke;
      [self.gesturePadView addGestureRecognizer:self.dollarPGestureRecognizer];
     self.gesturePadView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
 

@@ -11,7 +11,9 @@
 @interface GesturePadView : UIView {
     NSMutableDictionary *currentTouches;
     NSMutableArray *completeStrokes;
+    
 }
+@property BOOL showStroke;
 
 - (void)clearAll;
 

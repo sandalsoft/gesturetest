@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "GestureRouter.h"
-#import <Twitter/Twitter.h>
+#import <Social/Social.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @interface ViewController ()
 
@@ -25,6 +26,7 @@
     self.data = @[@"story 1", @"blah blah", @"hello", @"data stuffs", @"tits!"];
 
     self.gestureRouter = [[GestureRouter alloc] initWithCallingView:self.view];
+    self.gestureRouter.showStroke = YES;    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(gestureAction:)
                                                  name:@"GestureProcessingDone"
@@ -33,33 +35,42 @@
 }
 
 - (void)gestureAction:(NSNotification *)notification {
-    NSLog(@"shit");
+
     NSDictionary *gestureInfo = [notification userInfo];
     NSString *gestureName = [gestureInfo objectForKey:@"gestureName"];
     if ([gestureName isEqualToString:@"T"]) {
         [self sendTweet];
     }
+    else if ([gestureName isEqualToString:@"line"]) {
+        [self sendMail];
+    }
+}
 
+- (void)sendMail {
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@"Serious, this fucking works!"];
+        NSArray *toRecipients = [NSArray arrayWithObjects:@"julie.jawor@gmail.com", nil];
+        [mailer setToRecipients:toRecipients];
+        
+        NSString *emailBody = @"";
+        [mailer setMessageBody:emailBody isHTML:NO];
+        [self presentModalViewController:mailer animated:YES];
+        
+    }
 
 }
 
 - (void)sendTweet {
-    //Create the tweet sheet
-    TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-    
-    //Customize the tweet sheet here
-    //Add a tweet message
-    [tweetSheet setInitialText:@"HOLY SHIT THIS WORKS!!"];
-    
-    
-    //Set a blocking handler for the tweet sheet
-    tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result){
-        [self dismissModalViewControllerAnimated:YES];
-    };
-    
-    //Show the tweet sheet!
-    [self presentModalViewController:tweetSheet animated:YES];
-}
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"Initial Tweet Text!"];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }}
 
 #pragma mark TableView Delegates
 

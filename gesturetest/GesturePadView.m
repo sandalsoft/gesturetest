@@ -42,7 +42,6 @@
     currentTouches = [[NSMutableDictionary alloc] init];
     completeStrokes = [NSMutableArray array];
     
-//    [self setBackgroundColor:[UIColor clearColor]];
     [self setMultipleTouchEnabled:YES];
 }
 
@@ -56,7 +55,11 @@
         Stroke *stroke = [[Stroke alloc] init];
         [stroke setPoints:[NSMutableArray arrayWithObject:
                            [NSValue valueWithCGPoint:location]]];
-        [stroke setColor:[UIColor blackColor]];
+        if (self.showStroke)
+            [stroke setColor:[UIColor blackColor]];
+        else
+            [stroke setColor:[UIColor clearColor]];
+
         
         [currentTouches setObject:stroke forKey:key];
     }
@@ -91,7 +94,12 @@
     for (UITouch *touch in touches) {
         NSValue *key = [NSValue valueWithNonretainedObject:touch];
         Stroke *stroke = [currentTouches objectForKey:key];
-        [stroke setColor:[self randomColor]];
+        
+        if (self.showStroke)
+            [stroke setColor:[self randomColor]];
+        else
+        [stroke setColor:[UIColor clearColor]];
+
         
         if (stroke) {
             [completeStrokes addObject:stroke];

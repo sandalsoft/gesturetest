@@ -19,7 +19,7 @@
 @property (strong, nonatomic) IBOutlet GesturePadView *gesturePadView;
 @property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
 @property (strong, nonatomic) UIView *sendingView;
-
+@property BOOL showStroke;
 
 
 - (id)initWithCallingView:(UIView *)callingView ;
