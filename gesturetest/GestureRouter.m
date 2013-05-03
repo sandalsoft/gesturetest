@@ -11,6 +11,8 @@
 
 @implementation GestureRouter
 
+
+
 - (id)initWithCallingView:(UIView *)callingView {
     
     if ((self = [super init])) {
@@ -21,17 +23,18 @@
         
         [callingView addGestureRecognizer:longPress];
 
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(gestureTouchesDone:)
+                                                     name:@"DollarPGestureTouchesEnd"
+                                                   object:nil];
+        
         
         self.dollarPGestureRecognizer = [[DollarPGestureRecognizer alloc] initWithTarget:self
                                                                                   action:@selector(gestureRecognized:)];
         [self.dollarPGestureRecognizer setPointClouds:[DollarDefaultGestures defaultPointClouds]];
         [self.dollarPGestureRecognizer setDelaysTouchesEnded:NO];
 
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(gestureTouchesDone:)
-                                                     name:@"DollarPGestureTouchesEnd"
-                                                   object:nil];
-    }
+            }
     
     return self;
 }
@@ -45,7 +48,7 @@
 
 - (void)gestureRecognized:(DollarPGestureRecognizer *)sender {
     [self removeBorder:self.sendingView];
-    NSLog(@"recognizing done");
+//    NSLog(@"recognizing done");
     DollarResult *result = [sender result];
     NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
     NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};

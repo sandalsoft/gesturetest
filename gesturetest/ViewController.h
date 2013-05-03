@@ -18,4 +18,6 @@
 @property (strong, nonatomic) NSArray *data;
 
 @property (strong, nonatomic) GestureRouter *gestureRouter;
+
+- (void)sendTweet;
 @end

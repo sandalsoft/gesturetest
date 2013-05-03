@@ -11,13 +11,20 @@
 #import "DollarDefaultGestures.h"
 #import "GesturePadView.h"
 
+#define GestureRecognizedNotif @"com.sandalsoft.SSGestureAction.GestureRecognized"
+
+
 @interface GestureRouter : NSObject
 
 @property (strong, nonatomic) IBOutlet GesturePadView *gesturePadView;
 @property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
 @property (strong, nonatomic) UIView *sendingView;
 
+
+
 - (id)initWithCallingView:(UIView *)callingView ;
 - (void)startGestureRouter:(UIView *)callingView;
 
 @end
+
+

@@ -7,13 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "GestureViewController.h"
-#import <RWBlurPopover/RWBlurPopover.h>
-#import "DollarDefaultGestures.h"
-#import <QuartzCore/QuartzCore.h>
-#import "GesturePadView.h"
 #import "GestureRouter.h"
-
+#import <Twitter/Twitter.h>
 
 @interface ViewController ()
 
@@ -28,18 +23,42 @@
     self.dataTableView.delegate = self;
     self.dataTableView.dataSource = self;
     self.data = @[@"story 1", @"blah blah", @"hello", @"data stuffs", @"tits!"];
+
     self.gestureRouter = [[GestureRouter alloc] initWithCallingView:self.view];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gestureAction:)
+                                                 name:@"GestureProcessingDone"
+                                               object:nil];
+
 }
 
-- (void) gestureProcessingDone:(NSNotification *)gestureNotification {
+- (void)gestureAction:(NSNotification *)notification {
+    NSLog(@"shit");
+    NSDictionary *gestureInfo = [notification userInfo];
+    NSString *gestureName = [gestureInfo objectForKey:@"gestureName"];
+    if ([gestureName isEqualToString:@"T"]) {
+        [self sendTweet];
+    }
+
+
+}
+
+- (void)sendTweet {
+    //Create the tweet sheet
+    TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
     
-    NSDictionary *gestureInfo = [[NSDictionary alloc] initWithDictionary:[gestureNotification userInfo]];
-    NSLog(@"gesture NAME: %@, score: %@", [gestureInfo objectForKey:@"gestureName"], [gestureInfo objectForKey:@"gestureScore"]);
-   
-    // Remove the gesutre pad
-    for(UIView *subview in [self.view subviews])
-        if([subview isKindOfClass:[GesturePadView class]])
-            [subview removeFromSuperview];
+    //Customize the tweet sheet here
+    //Add a tweet message
+    [tweetSheet setInitialText:@"HOLY SHIT THIS WORKS!!"];
+    
+    
+    //Set a blocking handler for the tweet sheet
+    tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result){
+        [self dismissModalViewControllerAnimated:YES];
+    };
+    
+    //Show the tweet sheet!
+    [self presentModalViewController:tweetSheet animated:YES];
 }
 
 #pragma mark TableView Delegates
