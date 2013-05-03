@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GestureRouter.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, GestureDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *actionButton;
 

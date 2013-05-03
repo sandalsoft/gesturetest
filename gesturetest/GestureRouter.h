@@ -13,6 +13,13 @@
 
 #define GestureRecognizedNotif @"com.sandalsoft.SSGestureAction.GestureRecognized"
 
+@protocol GestureDelegate <NSObject>
+// Required means if they want to use the delegate they
+// have to implement it.
+@required
+- (void)gestureRecognitionComplete:(NSDictionary *) gestureDict;
+@end
+
 
 @interface GestureRouter : NSObject
 
@@ -21,9 +28,11 @@
 @property (strong, nonatomic) UIView *sendingView;
 @property BOOL showStroke;
 
+@property (nonatomic, assign) id delegate;
 
 - (id)initWithCallingView:(UIView *)callingView ;
 - (void)startGestureRouter:(UIView *)callingView;
+
 
 @end
 

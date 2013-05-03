@@ -26,11 +26,24 @@
     self.data = @[@"story 1", @"blah blah", @"hello", @"data stuffs", @"tits!"];
 
     self.gestureRouter = [[GestureRouter alloc] initWithCallingView:self.view];
-    self.gestureRouter.showStroke = YES;    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(gestureAction:)
-                                                 name:@"GestureProcessingDone"
-                                               object:nil];
+    self.gestureRouter.showStroke = YES;
+    self.gestureRouter.delegate = self;
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(gestureAction:)
+//                                                 name:@"GestureProcessingDone"
+//                                               object:nil];
+
+}
+
+- (void)gestureRecognitionComplete:(NSDictionary *)gestureDict {
+    NSLog(@"Name: %@\nScore: %2.2f", [gestureDict valueForKey:@"gestureName"], [[gestureDict valueForKey:@"gestureSure"] floatValue]);
+    NSString *gestureName = [gestureDict objectForKey:@"gestureName"];
+    if ([gestureName isEqualToString:@"T"]) {
+        [self sendTweet];
+    }
+    else if ([gestureName isEqualToString:@"line"]) {
+        [self sendMail];
+    }
 
 }
 

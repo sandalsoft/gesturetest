@@ -19,7 +19,7 @@
         
         self.sendingView = callingView;
         UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(activateGesture:)];
-        longPress.minimumPressDuration = 1.5;
+        longPress.minimumPressDuration = 1.0;
         
         [callingView addGestureRecognizer:longPress];
 
@@ -48,11 +48,10 @@
 
 - (void)gestureRecognized:(DollarPGestureRecognizer *)sender {
     [self removeBorder:self.sendingView];
-//    NSLog(@"recognizing done");
     DollarResult *result = [sender result];
-    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
+//    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
     NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"GestureProcessingDone" object:nil userInfo:gestureDict];
+    [[self delegate]  gestureRecognitionComplete:gestureDict];
 }
 
 - (void)activateGesture:(UILongPressGestureRecognizer *)sender {
