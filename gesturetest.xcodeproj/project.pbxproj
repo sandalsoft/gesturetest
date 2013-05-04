@@ -1,426 +1,1291 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708A59A1731CBAB0075BB28 /* GesturePadView.m */; };
-		07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A570851732F9FB00FF8692 /* GestureTits.xib */; };
-		07A570891733032800FF8692 /* GestureRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570881733032800FF8692 /* GestureRouter.m */; };
-		07A5708B17335D9B00FF8692 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708A17335D9B00FF8692 /* Twitter.framework */; };
-		07A5708D1733602700FF8692 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708C1733602700FF8692 /* MessageUI.framework */; };
-		07A5708F1733F3A000FF8692 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5708E1733F3A000FF8692 /* Social.framework */; };
-		07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E2172F713000A6688D /* UIKit.framework */; };
-		07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E4172F713000A6688D /* Foundation.framework */; };
-		07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB16E6172F713000A6688D /* CoreGraphics.framework */; };
-		07FB16ED172F713000A6688D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16EB172F713000A6688D /* InfoPlist.strings */; };
-		07FB16EF172F713000A6688D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB16EE172F713000A6688D /* main.m */; };
-		07FB16F3172F713000A6688D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB16F2172F713000A6688D /* AppDelegate.m */; };
-		07FB16F5172F713000A6688D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16F4172F713000A6688D /* Default.png */; };
-		07FB16F7172F713000A6688D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16F6172F713000A6688D /* Default@2x.png */; };
-		07FB16F9172F713000A6688D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16F8172F713000A6688D /* Default-568h@2x.png */; };
-		07FB16FC172F713000A6688D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16FA172F713000A6688D /* MainStoryboard_iPhone.storyboard */; };
-		07FB16FF172F713000A6688D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */; };
-		07FB1702172F713000A6688D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB1701172F713000A6688D /* ViewController.m */; };
-		07FB171C1730B26100A6688D /* DollarDefaultGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17111730B26100A6688D /* DollarDefaultGestures.m */; };
-		07FB171D1730B26100A6688D /* DollarP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17131730B26100A6688D /* DollarP.m */; };
-		07FB171E1730B26100A6688D /* DollarPGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */; };
-		07FB171F1730B26100A6688D /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17171730B26100A6688D /* DollarPoint.m */; };
-		07FB17201730B26100A6688D /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17191730B26100A6688D /* DollarPointCloud.m */; };
-		07FB17211730B26100A6688D /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB171B1730B26100A6688D /* DollarResult.m */; };
-		07FB175617315EDF00A6688D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175517315EDF00A6688D /* QuartzCore.framework */; };
-		07FB175817315EE700A6688D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175717315EE700A6688D /* CoreMedia.framework */; };
-		07FB175A17315EF200A6688D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175917315EF200A6688D /* CoreVideo.framework */; };
-		07FB175C17315EFA00A6688D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175B17315EFA00A6688D /* OpenGLES.framework */; };
-		07FB175E17315F0000A6688D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB175D17315F0000A6688D /* AVFoundation.framework */; };
-		07FB17641731640500A6688D /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB17631731640500A6688D /* GestureViewController.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		0708A5991731CBAB0075BB28 /* GesturePadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePadView.h; sourceTree = "<group>"; };
-		0708A59A1731CBAB0075BB28 /* GesturePadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePadView.m; sourceTree = "<group>"; };
-		07A570851732F9FB00FF8692 /* GestureTits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureTits.xib; sourceTree = "<group>"; };
-		07A570871733032800FF8692 /* GestureRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRouter.h; sourceTree = "<group>"; };
-		07A570881733032800FF8692 /* GestureRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRouter.m; sourceTree = "<group>"; };
-		07A5708A17335D9B00FF8692 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		07A5708C1733602700FF8692 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		07A5708E1733F3A000FF8692 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		07FB16DF172F713000A6688D /* gesturetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gesturetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07FB16E2172F713000A6688D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		07FB16E4172F713000A6688D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		07FB16E6172F713000A6688D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07FB16EA172F713000A6688D /* gesturetest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gesturetest-Info.plist"; sourceTree = "<group>"; };
-		07FB16EC172F713000A6688D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07FB16EE172F713000A6688D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07FB16F0172F713000A6688D /* gesturetest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gesturetest-Prefix.pch"; sourceTree = "<group>"; };
-		07FB16F1172F713000A6688D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		07FB16F2172F713000A6688D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		07FB16F4172F713000A6688D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		07FB16F6172F713000A6688D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		07FB16F8172F713000A6688D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		07FB16FB172F713000A6688D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		07FB16FE172F713000A6688D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		07FB1700172F713000A6688D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		07FB1701172F713000A6688D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		07FB17101730B26100A6688D /* DollarDefaultGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarDefaultGestures.h; sourceTree = "<group>"; };
-		07FB17111730B26100A6688D /* DollarDefaultGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarDefaultGestures.m; sourceTree = "<group>"; };
-		07FB17121730B26100A6688D /* DollarP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarP.h; sourceTree = "<group>"; };
-		07FB17131730B26100A6688D /* DollarP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarP.m; sourceTree = "<group>"; };
-		07FB17141730B26100A6688D /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPGestureRecognizer.h; sourceTree = "<group>"; };
-		07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPGestureRecognizer.m; sourceTree = "<group>"; };
-		07FB17161730B26100A6688D /* DollarPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPoint.h; sourceTree = "<group>"; };
-		07FB17171730B26100A6688D /* DollarPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPoint.m; sourceTree = "<group>"; };
-		07FB17181730B26100A6688D /* DollarPointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarPointCloud.h; sourceTree = "<group>"; };
-		07FB17191730B26100A6688D /* DollarPointCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
-		07FB171A1730B26100A6688D /* DollarResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
-		07FB171B1730B26100A6688D /* DollarResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
-		07FB175517315EDF00A6688D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		07FB175717315EE700A6688D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		07FB175917315EF200A6688D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		07FB175B17315EFA00A6688D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		07FB175D17315F0000A6688D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		07FB17621731640500A6688D /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
-		07FB17631731640500A6688D /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		07FB16DC172F713000A6688D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07A5708F1733F3A000FF8692 /* Social.framework in Frameworks */,
-				07A5708D1733602700FF8692 /* MessageUI.framework in Frameworks */,
-				07A5708B17335D9B00FF8692 /* Twitter.framework in Frameworks */,
-				07FB175E17315F0000A6688D /* AVFoundation.framework in Frameworks */,
-				07FB175C17315EFA00A6688D /* OpenGLES.framework in Frameworks */,
-				07FB175A17315EF200A6688D /* CoreVideo.framework in Frameworks */,
-				07FB175817315EE700A6688D /* CoreMedia.framework in Frameworks */,
-				07FB175617315EDF00A6688D /* QuartzCore.framework in Frameworks */,
-				07FB16E3172F713000A6688D /* UIKit.framework in Frameworks */,
-				07FB16E5172F713000A6688D /* Foundation.framework in Frameworks */,
-				07FB16E7172F713000A6688D /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		07FB16D6172F713000A6688D = {
-			isa = PBXGroup;
-			children = (
-				07FB16E8172F713000A6688D /* gesturetest */,
-				07FB16E1172F713000A6688D /* Frameworks */,
-				07FB16E0172F713000A6688D /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		07FB16E0172F713000A6688D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				07FB16DF172F713000A6688D /* gesturetest.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		07FB16E1172F713000A6688D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				07A5708E1733F3A000FF8692 /* Social.framework */,
-				07A5708C1733602700FF8692 /* MessageUI.framework */,
-				07A5708A17335D9B00FF8692 /* Twitter.framework */,
-				07FB175D17315F0000A6688D /* AVFoundation.framework */,
-				07FB175B17315EFA00A6688D /* OpenGLES.framework */,
-				07FB175917315EF200A6688D /* CoreVideo.framework */,
-				07FB175717315EE700A6688D /* CoreMedia.framework */,
-				07FB175517315EDF00A6688D /* QuartzCore.framework */,
-				07FB16E2172F713000A6688D /* UIKit.framework */,
-				07FB16E4172F713000A6688D /* Foundation.framework */,
-				07FB16E6172F713000A6688D /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		07FB16E8172F713000A6688D /* gesturetest */ = {
-			isa = PBXGroup;
-			children = (
-				07FB170E1730B26100A6688D /* libs */,
-				07FB16F1172F713000A6688D /* AppDelegate.h */,
-				07FB16F2172F713000A6688D /* AppDelegate.m */,
-				07FB16FA172F713000A6688D /* MainStoryboard_iPhone.storyboard */,
-				07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */,
-				07FB1700172F713000A6688D /* ViewController.h */,
-				07FB1701172F713000A6688D /* ViewController.m */,
-				07A570851732F9FB00FF8692 /* GestureTits.xib */,
-				07FB17621731640500A6688D /* GestureViewController.h */,
-				07FB17631731640500A6688D /* GestureViewController.m */,
-				07A570871733032800FF8692 /* GestureRouter.h */,
-				07A570881733032800FF8692 /* GestureRouter.m */,
-				0708A5991731CBAB0075BB28 /* GesturePadView.h */,
-				0708A59A1731CBAB0075BB28 /* GesturePadView.m */,
-				07FB16E9172F713000A6688D /* Supporting Files */,
-			);
-			path = gesturetest;
-			sourceTree = "<group>";
-		};
-		07FB16E9172F713000A6688D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				07FB16EA172F713000A6688D /* gesturetest-Info.plist */,
-				07FB16EB172F713000A6688D /* InfoPlist.strings */,
-				07FB16EE172F713000A6688D /* main.m */,
-				07FB16F0172F713000A6688D /* gesturetest-Prefix.pch */,
-				07FB16F4172F713000A6688D /* Default.png */,
-				07FB16F6172F713000A6688D /* Default@2x.png */,
-				07FB16F8172F713000A6688D /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		07FB170E1730B26100A6688D /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				07FB170F1730B26100A6688D /* DollarP */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		07FB170F1730B26100A6688D /* DollarP */ = {
-			isa = PBXGroup;
-			children = (
-				07FB17101730B26100A6688D /* DollarDefaultGestures.h */,
-				07FB17111730B26100A6688D /* DollarDefaultGestures.m */,
-				07FB17121730B26100A6688D /* DollarP.h */,
-				07FB17131730B26100A6688D /* DollarP.m */,
-				07FB17141730B26100A6688D /* DollarPGestureRecognizer.h */,
-				07FB17151730B26100A6688D /* DollarPGestureRecognizer.m */,
-				07FB17161730B26100A6688D /* DollarPoint.h */,
-				07FB17171730B26100A6688D /* DollarPoint.m */,
-				07FB17181730B26100A6688D /* DollarPointCloud.h */,
-				07FB17191730B26100A6688D /* DollarPointCloud.m */,
-				07FB171A1730B26100A6688D /* DollarResult.h */,
-				07FB171B1730B26100A6688D /* DollarResult.m */,
-			);
-			path = DollarP;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		07FB16DE172F713000A6688D /* gesturetest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 07FB1705172F713000A6688D /* Build configuration list for PBXNativeTarget "gesturetest" */;
-			buildPhases = (
-				07FB16DB172F713000A6688D /* Sources */,
-				07FB16DC172F713000A6688D /* Frameworks */,
-				07FB16DD172F713000A6688D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = gesturetest;
-			productName = gesturetest;
-			productReference = 07FB16DF172F713000A6688D /* gesturetest.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		07FB16D7172F713000A6688D /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Sandalsoft;
-			};
-			buildConfigurationList = 07FB16DA172F713000A6688D /* Build configuration list for PBXProject "gesturetest" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 07FB16D6172F713000A6688D;
-			productRefGroup = 07FB16E0172F713000A6688D /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				07FB16DE172F713000A6688D /* gesturetest */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		07FB16DD172F713000A6688D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07FB16ED172F713000A6688D /* InfoPlist.strings in Resources */,
-				07FB16F5172F713000A6688D /* Default.png in Resources */,
-				07FB16F7172F713000A6688D /* Default@2x.png in Resources */,
-				07FB16F9172F713000A6688D /* Default-568h@2x.png in Resources */,
-				07FB16FC172F713000A6688D /* MainStoryboard_iPhone.storyboard in Resources */,
-				07FB16FF172F713000A6688D /* MainStoryboard_iPad.storyboard in Resources */,
-				07A570861732F9FB00FF8692 /* GestureTits.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		07FB16DB172F713000A6688D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07FB16EF172F713000A6688D /* main.m in Sources */,
-				07FB16F3172F713000A6688D /* AppDelegate.m in Sources */,
-				07FB1702172F713000A6688D /* ViewController.m in Sources */,
-				07FB171C1730B26100A6688D /* DollarDefaultGestures.m in Sources */,
-				07FB171D1730B26100A6688D /* DollarP.m in Sources */,
-				07FB171E1730B26100A6688D /* DollarPGestureRecognizer.m in Sources */,
-				07FB171F1730B26100A6688D /* DollarPoint.m in Sources */,
-				07FB17201730B26100A6688D /* DollarPointCloud.m in Sources */,
-				07FB17211730B26100A6688D /* DollarResult.m in Sources */,
-				07FB17641731640500A6688D /* GestureViewController.m in Sources */,
-				0708A59B1731CBAB0075BB28 /* GesturePadView.m in Sources */,
-				07A570891733032800FF8692 /* GestureRouter.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		07FB16EB172F713000A6688D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07FB16EC172F713000A6688D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		07FB16FA172F713000A6688D /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07FB16FB172F713000A6688D /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		07FB16FD172F713000A6688D /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07FB16FE172F713000A6688D /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		07FB1703172F713000A6688D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		07FB1704172F713000A6688D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		07FB1706172F713000A6688D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gesturetest/gesturetest-Prefix.pch";
-				INFOPLIST_FILE = "gesturetest/gesturetest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		07FB1707172F713000A6688D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gesturetest/gesturetest-Prefix.pch";
-				INFOPLIST_FILE = "gesturetest/gesturetest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		07FB16DA172F713000A6688D /* Build configuration list for PBXProject "gesturetest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07FB1703172F713000A6688D /* Debug */,
-				07FB1704172F713000A6688D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		07FB1705172F713000A6688D /* Build configuration list for PBXNativeTarget "gesturetest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07FB1706172F713000A6688D /* Debug */,
-				07FB1707172F713000A6688D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 07FB16D7172F713000A6688D /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0708A5991731CBAB0075BB28</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GesturePadView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0708A59A1731CBAB0075BB28</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GesturePadView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0708A59B1731CBAB0075BB28</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0708A59A1731CBAB0075BB28</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07A570851732F9FB00FF8692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>GestureTits.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07A570861732F9FB00FF8692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07A570851732F9FB00FF8692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07A570871733032800FF8692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GestureRouter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07A570881733032800FF8692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GestureRouter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07A570891733032800FF8692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07A570881733032800FF8692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07A5708A17335D9B00FF8692</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Twitter.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Twitter.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07A5708B17335D9B00FF8692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07A5708A17335D9B00FF8692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07A5708C1733602700FF8692</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MessageUI.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07A5708D1733602700FF8692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07A5708C1733602700FF8692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07A5708E1733F3A000FF8692</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Social.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Social.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07A5708F1733F3A000FF8692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07A5708E1733F3A000FF8692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16D6172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16E8172F713000A6688D</string>
+				<string>07FB16E1172F713000A6688D</string>
+				<string>07FB16E0172F713000A6688D</string>
+				<string>B81B03D6BE0D435EA584F025</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16D7172F713000A6688D</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Sandalsoft</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>07FB16DA172F713000A6688D</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>07FB16D6172F713000A6688D</string>
+			<key>productRefGroup</key>
+			<string>07FB16E0172F713000A6688D</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>07FB16DE172F713000A6688D</string>
+			</array>
+		</dict>
+		<key>07FB16DA172F713000A6688D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>07FB1703172F713000A6688D</string>
+				<string>07FB1704172F713000A6688D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>07FB16DB172F713000A6688D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>07FB16EF172F713000A6688D</string>
+				<string>07FB16F3172F713000A6688D</string>
+				<string>07FB1702172F713000A6688D</string>
+				<string>07FB171C1730B26100A6688D</string>
+				<string>07FB171D1730B26100A6688D</string>
+				<string>07FB171E1730B26100A6688D</string>
+				<string>07FB171F1730B26100A6688D</string>
+				<string>07FB17201730B26100A6688D</string>
+				<string>07FB17211730B26100A6688D</string>
+				<string>0708A59B1731CBAB0075BB28</string>
+				<string>07A570891733032800FF8692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>07FB16DC172F713000A6688D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>07A5708F1733F3A000FF8692</string>
+				<string>07A5708D1733602700FF8692</string>
+				<string>07A5708B17335D9B00FF8692</string>
+				<string>07FB175E17315F0000A6688D</string>
+				<string>07FB175C17315EFA00A6688D</string>
+				<string>07FB175A17315EF200A6688D</string>
+				<string>07FB175817315EE700A6688D</string>
+				<string>07FB175617315EDF00A6688D</string>
+				<string>07FB16E3172F713000A6688D</string>
+				<string>07FB16E5172F713000A6688D</string>
+				<string>07FB16E7172F713000A6688D</string>
+				<string>F0223F12A4FC478F9E6F12E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>07FB16DD172F713000A6688D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>07FB16ED172F713000A6688D</string>
+				<string>07FB16F5172F713000A6688D</string>
+				<string>07FB16F7172F713000A6688D</string>
+				<string>07FB16F9172F713000A6688D</string>
+				<string>07FB16FC172F713000A6688D</string>
+				<string>07FB16FF172F713000A6688D</string>
+				<string>07A570861732F9FB00FF8692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>07FB16DE172F713000A6688D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>07FB1705172F713000A6688D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>07FB16DB172F713000A6688D</string>
+				<string>07FB16DC172F713000A6688D</string>
+				<string>07FB16DD172F713000A6688D</string>
+				<string>C227F71937644A1EB2467391</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>gesturetest</string>
+			<key>productName</key>
+			<string>gesturetest</string>
+			<key>productReference</key>
+			<string>07FB16DF172F713000A6688D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>07FB16DF172F713000A6688D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>gesturetest.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>07FB16E0172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16DF172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16E1172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07A5708E1733F3A000FF8692</string>
+				<string>07A5708C1733602700FF8692</string>
+				<string>07A5708A17335D9B00FF8692</string>
+				<string>07FB175D17315F0000A6688D</string>
+				<string>07FB175B17315EFA00A6688D</string>
+				<string>07FB175917315EF200A6688D</string>
+				<string>07FB175717315EE700A6688D</string>
+				<string>07FB175517315EDF00A6688D</string>
+				<string>07FB16E2172F713000A6688D</string>
+				<string>07FB16E4172F713000A6688D</string>
+				<string>07FB16E6172F713000A6688D</string>
+				<string>2C68F6E8DA6045AC92DD2271</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16E2172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB16E3172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16E2172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16E4172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB16E5172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16E4172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16E6172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB16E7172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16E6172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16E8172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB170E1730B26100A6688D</string>
+				<string>07FB16F1172F713000A6688D</string>
+				<string>07FB16F2172F713000A6688D</string>
+				<string>07FB16FA172F713000A6688D</string>
+				<string>07FB16FD172F713000A6688D</string>
+				<string>07FB1700172F713000A6688D</string>
+				<string>07FB1701172F713000A6688D</string>
+				<string>07A570851732F9FB00FF8692</string>
+				<string>07A570871733032800FF8692</string>
+				<string>07A570881733032800FF8692</string>
+				<string>0708A5991731CBAB0075BB28</string>
+				<string>0708A59A1731CBAB0075BB28</string>
+				<string>07FB16E9172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>gesturetest</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16E9172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16EA172F713000A6688D</string>
+				<string>07FB16EB172F713000A6688D</string>
+				<string>07FB16EE172F713000A6688D</string>
+				<string>07FB16F0172F713000A6688D</string>
+				<string>07FB16F4172F713000A6688D</string>
+				<string>07FB16F6172F713000A6688D</string>
+				<string>07FB16F8172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16EA172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>gesturetest-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16EB172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16EC172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16EC172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16ED172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16EB172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16EE172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16EF172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16EE172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16F0172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>gesturetest-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F1172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F2172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F3172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16F2172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16F4172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F5172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16F4172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16F6172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F7172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16F6172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16F8172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16F9172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16F8172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16FA172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16FB172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16FB172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16FC172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16FA172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB16FD172F713000A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB16FE172F713000A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16FE172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB16FF172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB16FD172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB1700172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB1701172F713000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB1702172F713000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB1701172F713000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB1703172F713000A6688D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>07FB1704172F713000A6688D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>07FB1705172F713000A6688D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>07FB1706172F713000A6688D</string>
+				<string>07FB1707172F713000A6688D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>07FB1706172F713000A6688D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B81B03D6BE0D435EA584F025</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>gesturetest/gesturetest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>gesturetest/gesturetest-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>07FB1707172F713000A6688D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B81B03D6BE0D435EA584F025</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>gesturetest/gesturetest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>gesturetest/gesturetest-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>07FB170E1730B26100A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB170F1730B26100A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>libs</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB170F1730B26100A6688D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07FB17101730B26100A6688D</string>
+				<string>07FB17111730B26100A6688D</string>
+				<string>07FB17121730B26100A6688D</string>
+				<string>07FB17131730B26100A6688D</string>
+				<string>07FB17141730B26100A6688D</string>
+				<string>07FB17151730B26100A6688D</string>
+				<string>07FB17161730B26100A6688D</string>
+				<string>07FB17171730B26100A6688D</string>
+				<string>07FB17181730B26100A6688D</string>
+				<string>07FB17191730B26100A6688D</string>
+				<string>07FB171A1730B26100A6688D</string>
+				<string>07FB171B1730B26100A6688D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DollarP</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17101730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarDefaultGestures.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17111730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarDefaultGestures.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17121730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarP.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17131730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarP.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17141730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarPGestureRecognizer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17151730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarPGestureRecognizer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17161730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarPoint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17171730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarPoint.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17181730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarPointCloud.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB17191730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarPointCloud.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB171A1730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DollarResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB171B1730B26100A6688D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DollarResult.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07FB171C1730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB17111730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB171D1730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB17131730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB171E1730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB17151730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB171F1730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB17171730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB17201730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB17191730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB17211730B26100A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB171B1730B26100A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB175517315EDF00A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB175617315EDF00A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB175517315EDF00A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB175717315EE700A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreMedia.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreMedia.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB175817315EE700A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB175717315EE700A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB175917315EF200A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreVideo.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreVideo.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB175A17315EF200A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB175917315EF200A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB175B17315EFA00A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>OpenGLES.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/OpenGLES.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB175C17315EFA00A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB175B17315EFA00A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07FB175D17315F0000A6688D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>07FB175E17315F0000A6688D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07FB175D17315F0000A6688D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2C68F6E8DA6045AC92DD2271</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B81B03D6BE0D435EA584F025</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C227F71937644A1EB2467391</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>F0223F12A4FC478F9E6F12E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C68F6E8DA6045AC92DD2271</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>07FB16D7172F713000A6688D</string>
+</dict>
+</plist>

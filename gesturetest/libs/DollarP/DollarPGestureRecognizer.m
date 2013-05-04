@@ -61,11 +61,6 @@
     [super touchesEnded:touches withEvent:event];
 }
 
-- (void)gestureComplete:(NSTimer *) myTimer {
-    NSDictionary *userInfo = [[NSDictionary alloc] init];
-    userInfo = (NSDictionary *) myTimer.userInfo;
-    [super touchesEnded:[userInfo objectForKey:@"touches"] withEvent:[userInfo objectForKey:@"event"]];
-}
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesCancelled:touches withEvent:event];

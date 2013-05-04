@@ -11,7 +11,7 @@
 
 @interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, GestureDelegate>
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *actionButton;
+
 
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 
@@ -20,4 +20,5 @@
 @property (strong, nonatomic) GestureRouter *gestureRouter;
 
 - (void)sendTweet;
+
 @end
